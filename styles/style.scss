@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 h1,
 h2,
 h3,
@@ -98,6 +103,66 @@ body {
         }
         .progress-bar-area {
           margin-top: 2rem;
+        }
+      }
+    }
+
+    section.resume {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 2rem;
+      section.table {
+        flex: 5 1 500px;
+        padding: 2rem;
+        table {
+          border-collapse: collapse;
+          tr {
+            border-bottom: 2px solid gray;
+            transition: all 0.2 ease;
+            &:hover {
+              background-color: rgb(184, 255, 222);
+            }
+          }
+          td {
+            padding: 1rem;
+          }
+        }
+      }
+
+      section.picture {
+        flex: 1 1 500px;
+        position: relative;
+        img {
+          width: 30vw;
+        }
+        div.greenRect {
+          width: 30vw;
+          height: 90vh;
+          border: 10px solid rgb(195, 255, 200);
+          position: absolute;
+          top: 30px;
+          left: 80px;
+          z-index: -1;
+        }
+
+        div.greenRect2 {
+          width: 50vw;
+          height: 40vh;
+          border: 10px solid rgb(195, 255, 200);
+          position: absolute;
+          top: 300px;
+          left: -300px;
+          z-index: -1;
+        }
+
+        div.greenRect3 {
+          width: 50vw;
+          height: 40vh;
+          border: 10px solid rgb(195, 255, 200);
+          position: absolute;
+          top: 0;
+          left: -100px;
+          z-index: -1;
         }
       }
     }
