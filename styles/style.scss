@@ -168,3 +168,21 @@ body {
     }
   }
 }
+
+@media screen and (max-width: 800px) {
+  body {
+    main {
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    nav {
+      position: static;
+      ul {
+        flex-direction: column;
+      }
+    }
+  }
+}
