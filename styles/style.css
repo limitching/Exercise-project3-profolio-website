@@ -4,11 +4,6 @@
   box-sizing: border-box;
 }
 
-html,
-body {
-  overflow-x: hidden;
-}
-
 h1,
 h2,
 h3,
@@ -100,6 +95,7 @@ body main section.resume {
   display: flex;
   flex-wrap: wrap;
   padding: 2rem;
+  overflow-x: hidden;
 }
 body main section.resume section.table {
   flex: 5 1 500px;
@@ -153,6 +149,37 @@ body main section.resume section.picture div.greenRect3 {
   z-index: -1;
 }
 
+@media screen and (max-width: 800px) {
+  body main section.main-area div.info {
+    padding: 1rem;
+  }
+  body main section.main-area img {
+    width: 90%;
+  }
+  body main section.about-me {
+    padding: 1rem 0.5rem;
+  }
+  body main section.about-me div.desc {
+    width: 80%;
+  }
+  body main section.about-me div.progress-area {
+    width: 80%;
+  }
+  body main section.resume {
+    overflow-x: auto;
+  }
+  body main section.resume section.table {
+    min-width: 800px;
+  }
+  body main section.resume section.picture img {
+    width: 90%;
+  }
+  body main section.resume section.picture div.greenRect,
+body main section.resume section.picture div.greenRect2,
+body main section.resume section.picture div.greenRect3 {
+    display: none;
+  }
+}
 @media screen and (max-width: 500px) {
   body nav {
     position: static;
